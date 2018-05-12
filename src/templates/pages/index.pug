@@ -1,0 +1,13 @@
+extends ../template
+
+block varibles
+    - var title = "Добро Пожаловать"
+
+block content
+    h1 Главня
+    form
+        label(for="email") email
+        input(type="text" name="email" id="email")
+        label(for="email") password
+        input(type="text" name="password" id="password")
+        button Войти
