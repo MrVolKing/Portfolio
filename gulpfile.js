@@ -13,11 +13,11 @@ const paths = {
     templates: {
         pages: 'src/templates/pages/*.pug',
         src: 'src/templates/**/*.pug',
-        dest: 'build/assets/'
+        dest: 'build/'
     },
     style: {
         src: 'src/style/**/*.scss',
-        dest: 'build/assets/styles'
+        dest: 'build/styles'
     }
 }
 
