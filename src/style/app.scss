@@ -1,8 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    margin: 10px;
+   
     background: #ccc;
 }
 
 @import 'common/menu.scss';
 @import 'common/technologies.scss';
 @import 'common/slider.scss';
+@import 'index.scss';

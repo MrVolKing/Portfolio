@@ -8,6 +8,7 @@ const browserSync = require('browser-sync').create();
 const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
+const autoprefixer = require('gulp-autoprefixer');
 
 
 
@@ -55,9 +56,13 @@ function templates() {
 function styles() {
     return gulp.src('./src/style/app.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({outputstyle: 'compressed' }))
+        .pipe(sass({outputstyle: 'compressed' }).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min' }))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest(paths.style.dest))
         
 }
@@ -78,17 +83,23 @@ function server() {
     browserSync.watch(paths.root + '/**/*.*', browserSync.reload);
 }
 
-//Webpack
-function scripts(){
-    return gulp.src('./src/scripts/app.js')
-    .pipe(gulpWebpack(webpackConfig, webpack))
-    .pipe(gulp.dest(paths.scripts.dest));
+// //Webpack
+// function scripts(){
+//     return gulp.src('./src/scripts/app.js')
+//     .pipe(gulpWebpack(webpackConfig, webpack))
+//     .pipe(gulp.dest(paths.scripts.dest));
+// }
+// Переносим скрипт
+function scripts () {
+    return gulp.src(paths.scripts.src)
+        .pipe(gulp.dest(paths.scripts.dest));
 }
 
 exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;
 exports.images = images;
+exports.scripts = scripts;
 
 gulp.task('default', gulp.series(
     clean,

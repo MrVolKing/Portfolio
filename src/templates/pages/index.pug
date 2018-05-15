@@ -4,10 +4,43 @@ block varibles
     - var title = "Добро Пожаловать"
 
 block content
-    h1 Главня
-    form
-        label(for="email") email
-        input(type="text" name="email" id="email")
-        label(for="email") password
-        input(type="text" name="password" id="password")
-        button Войти
+    //- h1 Главня Стп
+    //- form
+    //-     label(for="email") email
+    //-     input(type="text" name="email" id="email")
+    //-     label(for="email") password
+    //-     input(type="text" name="password" id="password")
+    //-     button Войти
+    .content
+    
+            button.content_button Авторизироваться
+            div.centr
+                .visitcard 
+                    div.visitcard_foto
+                        img.foto(src="./images/foto.png", alt="")
+                    div.visitcard_name
+                        p.visitcard_nametext Владислав Короленко
+                    div.visitcard_description
+                        p.visitcard_descriptiontext Личный сайт веб разработчика
+                    div.visitcard_blocklink
+                        div.visitcard_blocklink1
+                            a(href="http://www.facebook.com/profile.php?id=100022800711759") 
+                                img(src="./images/f.png", alt="")
+                        div.visitcard_blocklink2
+                            a(href="http://github.com/MrVolKing?tab=repositories")
+                                img(src="./images/github.png", alt="")
+                        div.visitcard_blocklink3
+                            a
+                                img(src="./images/in.png", alt="")
+                    div.visitcard_blockbutton
+                        div.visitcard_blockbutton1
+                            a(href="./my-works.html").visitcard_button1 Мои Работы
+                        div.visitcard_blockbutton2
+                            a(href="./about.html").visitcard_button2 Обо мне
+                        div.visitcard_blockbutton3
+                            a(href="./blog.html").visitcard_button3 Блог
+            div.text
+                p © Владюха Короленко | создано с любовью к Иринюхе | 2018
+
+
+                

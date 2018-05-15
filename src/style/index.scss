@@ -1,0 +1,135 @@
+@font-face {
+    src: url('fonts.googleapis.com/css?family=Roboto:400,500')
+}
+.content{
+    background: no-repeat;
+    background-image: url(../images/1200_desert_welcome.png);
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.content_button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 4%;
+    outline:none;
+    margin-left: 85%;
+    width: 180px;
+    height: 45px;
+    border-color: white;
+    border-radius: 6px;
+    color: white;
+    background-color: Transparent;
+}
+
+.centr{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.visitcard{
+    width: 380px;
+    height: 400px;
+    background-image: url(../images/welcomevisitcard.png);
+    margin-top: 9.5%;
+}
+
+.visitcard_foto{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.foto{
+    border-radius: 140px;
+    height: 130px;
+    width: 130px;
+}
+
+.visitcard_nametext{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 0.3rem;
+}
+
+.visitcard_descriptiontext{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+}
+.visitcard_blocklink{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+
+.visitcard_blocklink1, .visitcard_blocklink2, .visitcard_blocklink3{
+    margin: 0 1rem;
+}
+
+.visitcard_blockbutton{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;;
+} 
+
+.visitcard_blockbutton
+    div:hover{
+        background-color: #cb871f;
+    }
+
+.visitcard_blockbutton1{
+    width: 40%;
+    background-color: #e5a630;
+    height: 3rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.visitcard_blockbutton2{
+    width: 36%;
+    background-color: #e5a630;
+    border-left: solid white 2px;
+    border-right: solid white 2px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.visitcard_blockbutton3{
+    width: 24%;
+    background-color: #e5a630;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    
+}
+
+.visitcard_button1, .visitcard_button2, .visitcard_button3{
+   text-decoration: none;
+   color: white;
+//    width: 100%;
+//    height: 100%;
+  
+   
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 6%;
+    color: white;
+}
