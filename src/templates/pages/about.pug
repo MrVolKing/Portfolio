@@ -4,5 +4,217 @@ block varibles
     - var title = "Обо мне"
 
 block content
-    h1 Обо мне
-    include ../common/technologies.pug
+    .wrapper#wrapper
+        .wrapper__left#wrapper__left
+        .wrapper__right#wrapper__right
+
+    .fulmenu#fulmenu
+        a(href="./my-works.html", class="fulmenu__link margin-link0") Мои Работы
+        a(href="./blog.html", class="fulmenu__link margin-link1") Блог
+        a(href="./about.html", class="fulmenu__link margin-link2") Обо Мне
+        a(href="./login.html", class="fulmenu__link margin-link3") Авторизация
+    .bgr
+    header.header.hero#header
+        .hero__links.visitcard__blocklink
+            div.fb
+                a(href="http://www.facebook.com/profile.php?id=100022800711759") 
+                    svg(class="visitcard-icon visitcard-icon_white")
+                        use(xlink:href="images/sprite/sprite.svg#facebook-logo")
+            div.github
+                a(href="http://github.com/MrVolKing?tab=repositories")
+                    svg(class="visitcard-icon visitcard-icon_white")
+                        use(xlink:href="images/sprite/sprite.svg#github")
+            div.in
+                a(href="#")
+                    svg(class="visitcard-icon visitcard-icon_white")
+                        use(xlink:href="images/sprite/sprite.svg#in")
+
+        .hero__menu.humburger#humburger
+            .line1#line1
+            .line2#line2
+            .line3#line3
+        .hero__visitcard
+            .hero.visitcard__foto
+                img.foto(src="./images/foto.png", alt="")
+            .hero.visitcard__name
+                span.nametext Владислав Короленко
+            .hero.visitcard__description
+                p.descriptiontext Личный сайт веб разработчика
+        .arrow-down.hero__scroll-button
+            svg(class="arrow_downsvg arrow-about")
+                use(xlink:href="images/sprite/sprite.svg#arrow_down")
+        .box
+            svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+                polygon.left(points='0,0   0,86   500.8,86   500.8,75.5')
+                polygon.right(points='1000,0   1000,86   500,86   500,75.5')
+        
+            
+        
+    .section.about
+        .about__left.about__left_whiite
+            .about__left-title
+                h1.block-title Обо мне
+                .block-title__svg.top0
+                    svg(class="aboutsvg")
+                        use(xlink:href="images/sprite/sprite.svg#about_header")
+            .about__left-description
+                .user-description
+                    .user-description__image
+                        img.user-description__avatar(src="./images/n.jpg", alt="")
+                    .user-description__title
+                        .block-subtitle Кто Я
+                    .user-description__text
+                        div
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, provident. Necessitatibus modi, nisi soluta numquam ex minus eius velit. Possimus ipsam voluptatibus reprehenderit voluptatem doloribus consectetur voluptatum, a ipsum quasi.
+                        div
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, porro accusamus veritatis excepturi iste totam est cumque voluptatum esse eius doloremque sed omnis libero a cupiditate iure, dolor distinctio quam.
+                        div
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque quis omnis earum modi facere officiis amet, eos error reiciendis veniam provident obcaecati ut architecto id voluptatum laborum, dolores rem?
+
+
+        .about__right.about__right_gray
+            .about__right-title
+                .block-subtitle.transformer 
+                    span Чем я могу
+                        br
+                        | быть вам полезен
+            .about__right-description
+                p.about__right-descriptiontext Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam labore praesentium nostrum, veritatis libero natus officiis odit illum inventore, sed error? Incidunt quibusdam mollitia minus rem consequatur eum amet cum!
+            .about__right-content   
+
+                - 
+                    var skills = [
+                        {
+                            skillTitle: 'Frontend',
+                            skillSkills: [
+                                {
+                                    name: 'HTML5',
+                                    value: 90
+                                },
+                                {
+                                    name: 'CSS3',
+                                    value: 80
+                                },
+                                {
+                                    name: 'Java Script',
+                                    value: 10
+                                }
+                            ]
+                        },
+                        {
+                            skillTitle: 'Backend',
+                            skillSkills: [
+                                {
+                                    name: 'PHP',
+                                    value: 35
+                                },
+                                {
+                                    name: 'Node.js',
+                                    value: 85
+                                }
+                            ]
+                        },
+                        {
+                            skillTitle: 'WorkFlow',
+                            skillSkills: [
+                                {
+                                    name: 'Git',
+                                    value: 90
+                                },
+                                {
+                                    name: 'Gulp',
+                                    value: 80
+                                },
+                                {
+                                    name: 'Bower',
+                                    value: 60
+                                }
+                            ]
+                        }
+                    ] 
+
+                .skills-list
+                    each item in skills
+                        .skills-list__item
+                            .skills-row
+                                h3.skills-row__title= item.skillTitle
+                                .skills-row__list
+                                    .skills-row__item
+                                        .skill
+                                            ul.wrap
+                                                each skill in item.skillSkills
+                                                    li.item
+                                                        .nameskill
+                                                            span= skill.name
+                                                        svg.circles(viewbox='0 0 110 110')
+                                                            circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
+                                                            circle.circle__second#circle__second(
+                                                                r='45' 
+                                                                cx='50%' 
+                                                                cy='50%' 
+                                                                transform='rotate(-90 55 55)' 
+                                                                class=`circle-${skill.value}`
+                                                            )
+                                                  
+
+
+    section.section-map
+        .google-map 
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.858772472106!2d30.752386615543934!3d46.45149527912506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633e7823f849f%3A0xc7b286171498ecd8!2z0L_RgNC-0YHQvy4g0KjQtdCy0YfQtdC90LrQviwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1527600744982" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        .map__data
+            .contacts
+                .contacts__title
+                    .block-subtitle Контакты
+                    ul.contacts__list
+                        -
+                            var contacts = [
+                                ['skype', 'skype_kor'],
+                                ['envelope2', '85894030r'],
+                                ['phone2', 'skype_kor'],
+                                ['map_marker', 'skype_kor'],    
+                            ]
+
+                            //- var classitem = [
+                            //-     ['ontacts__item1', 'ontacts__item2', 'ontacts__item3', 'ontacts__item4']
+                            //- ]
+
+                        each item in contacts
+                            li.contacts__item
+                                .contacts-row__icon
+                                    svg(class="map__dada-icon")
+                                        use(xlink:href=`images/sprite/sprite.svg#${item[0]}`) 
+                                .contacts-row__title #{item[1]}
+
+    footer.footer
+        .footer-left
+            p.footer__text Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool. 
+            p.footer__text.footer__text-transparent © Владислав Короленко <br> Cоздано с любовью к Иринюхе | 2018
+        .footer-center
+            .footer-center__top
+                .footer-menu
+                    a(class="footer-menu__link" href="./my-works.html") Мои Работы
+                    a(class="footer-menu__link" href="./about.html") Обо Мне
+                    a(class="footer-menu__link" href="./blog.html") Блог
+                    a(class="footer-menu__link" href="./login.html") Авторизация
+            .footer-center__bottom
+                div.footer-icon
+                    div.fb
+                        a(href="http://www.facebook.com/profile.php?id=100022800711759") 
+                            svg(class="visitcard-icon visitcard-icong_grey")
+                                use(xlink:href="images/sprite/sprite.svg#facebook-logo")
+                    div.github
+                        a(href="http://github.com/MrVolKing?tab=repositories")
+                            svg(class="visitcard-icon visitcard-icong_grey")
+                                use(xlink:href="images/sprite/sprite.svg#github")
+                    div.in
+                        a(href="#")
+                            svg(class="visitcard-icon visitcard-icong_grey")
+                                use(xlink:href="images/sprite/sprite.svg#in")
+        .footer-right
+            .skype.footer__text.footer__text-transparent skype_kdn
+            .mail.footer__text.footer__text-transparent 99519851vvvk@gmail.com
+            .phone.footer__text.footer__text-transparent +38 (063) 412 03 74
+            .adress.footer__text.footer__text-transparent Одесса, пр.Шевченко, д.14
+            
+
+

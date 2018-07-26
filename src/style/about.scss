@@ -1,0 +1,509 @@
+.header{
+  //background-image: url(../images/sand.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero__links{
+  position: absolute;
+  left: 30px;
+  top: 45px;
+}
+
+.visitcard-icon_white{
+  fill: white;
+}
+
+.visitcard-icon_white:hover{
+  fill: #ce8a0d;
+}
+
+.hero__menu{
+  position: absolute;
+  right: 30px;
+  top: 45px;
+  z-index: 600;
+}
+
+.humburgersvg{
+  fill: white;
+  width: 40px;
+  height: 36px;
+}
+
+.arrow-down{
+  position: absolute;
+  bottom: 160px;
+}
+
+.arrow_downsvg{
+  fill: #ccc;
+  width: 28px;
+  height: 18px;
+}
+
+.humburgersvg:hover, .arrow_downsvg:hover{
+    fill: white;
+}
+
+.about{
+  display: flex;
+  flex-direction: row;
+}
+
+.about__left, .about__right{
+  width: 50%;
+}
+
+.about__left_whiite{
+  background-color: #efeee9;
+  z-index: 800;
+}
+
+.about__left-title{
+  position: relative;
+}
+
+.block-title{
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  font-family: 'sansus';
+  font-size: 63px;
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: #373e42;
+  font-weight: 300;
+  z-index: 2;
+  transform: translate(-110px, -50px);
+  top: 50px;
+}
+
+.block-subtitle{
+  font-size: 35px;
+  padding-top: 37px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'sansus';
+}
+
+.block-title:before{
+  content: url(../images/l.svg);
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  font-size: 20px;
+  left: -65px;
+}
+
+.block-title:after{
+  content: url(../images/r.svg);
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  font-size: 20px;
+  right: -65px;
+}
+
+.block-subtitle:before{
+  content: url(../images/l2.png);
+  position: absolute;
+  transform: translate(-28px, -5px);
+}
+ 
+.block-subtitle:after{
+  content: url(../images/r2.png);
+  position: absolute;
+  transform: translate(7px, -5px);
+}
+
+.transformer::before{
+  content: url(../images/l2.png);
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  font-size: 20px;
+  left: 200px;
+}
+
+.transformer::after{
+  content: url(../images/r2.png);
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  font-size: 20px;
+  right: 200px;
+}
+
+.transformer{
+  transform: translateY(-35px);
+}
+
+
+
+.block-title__svg{
+  position: relative;
+  top: 73px;
+  left: 50px;
+  transform: translate(-50px, -50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.top0{
+  top: 0;
+}
+.aboutsvg{
+  fill: #ede7db;
+  width: 360px;
+  //height: 125px;
+}
+
+.user-description__avatar{
+  text-align: center;
+  width: 447px;
+  height: 392px;
+}
+
+.about__left-title, .user-description__title{
+  text-align: center;
+}
+
+.user-description__title{
+  color: #5d5a55;
+}
+
+.about__left-title{
+  margin-bottom: 6px;
+}
+
+.about__left-description{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.user-description__text{
+  width: 447px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 46px;
+}
+
+.user-description__text
+  p{
+    margin-bottom: 20px;
+  }
+
+.about__right{
+  color: #5d5a55;
+}
+
+.about__right_gray{
+  background-color: #eeebdf;
+  z-index: 800;
+}
+
+.about__right-title, .about__right-description{
+  text-align: center;
+}
+
+.about__right-description{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__right-description
+  p{
+    width: 80%;
+  }
+
+  .about__right-content{
+    margin-left: 40px;
+  }
+
+// Правый скил
+
+.wrap{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.skills-row__title{
+  width: 80px;
+  margin-left: 45px;
+}
+
+.circles {
+  fill: none;
+  stroke-width: 15;
+}
+.circle__first {
+  stroke: #dfdcd5;
+}
+.circle__second {
+  stroke: #1bb696;
+  stroke-dasharray: .0010 282.6;
+  transition: all 1s;
+}
+
+.item {
+  display: inline-block;
+  position: relative;
+  width: 170px;
+  height: 170px;
+}
+
+.nameskill{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.circles:hover .circle-0 {
+   stroke-dasharray: .001 282.6;
+}
+.circles:hover .circle-10 {
+   stroke-dasharray: 28.26 282.6;
+}
+.circles:hover .circle-15 {
+   stroke-dasharray: 42.39 282.6;
+}
+.circles:hover .circle-20 {
+   stroke-dasharray: 56.52 282.6;
+}
+.circles:hover .circle-25 {
+   stroke-dasharray: 70.65 282.6;
+}
+.circles:hover .circle-30 {
+   stroke-dasharray: 84.78 282.6;
+}
+.circles:hover .circle-35 {
+   stroke-dasharray: 98.91 282.6;
+}
+.circles:hover .circle-40 {
+   stroke-dasharray: 113.04 282.6;
+}
+.circles:hover .circle-45 {
+   stroke-dasharray: 127.17 282.6;
+}
+.circles:hover .circle-50 {
+   stroke-dasharray: 141.3 282.6;
+}
+.circles:hover .circle-55 {
+   stroke-dasharray: 155.43 282.6;
+}
+.circles:hover .circle-60 {
+   stroke-dasharray: 169.56 282.6;
+}
+.circles:hover .circle-65 {
+   stroke-dasharray: 183.69 282.6;
+}
+.circles:hover .circle-70 {
+   stroke-dasharray: 197.82 282.6;
+}
+.circles:hover .circle-75 {
+   stroke-dasharray: 211.95 282.6;
+}
+.circles:hover .circle-80 {
+   stroke-dasharray: 226.08 282.6;
+}
+.circles:hover .circle-85 {
+   stroke-dasharray: 240.21 282.6;
+}
+.circles:hover .circle-90 {
+   stroke-dasharray: 254.34 282.6;
+}
+.circles:hover .circle-95 {
+   stroke-dasharray: 268.47 282.6;
+}
+.circles:hover .circle-100 {
+   stroke-dasharray: 282.6 282.6;
+}
+
+.skills-list{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.section-map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-map{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 975px;
+}
+
+.map{
+  width: 100%;
+  height: 975px;
+}
+
+.map__data{
+  width: 380px;
+  //height: 285px;
+  background-color: #fcf0d3;
+  opacity: 0.9;
+  position: absolute;
+  z-index: 2;
+  color: #5d5a55;
+}
+
+.contacts__list{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.contacts__item{
+  display: flex;
+}
+
+.contacts-row__icon{
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.map__dada-icon{
+  width: 20px;
+  height: 20px;
+  fill: #ce8a0d;
+}
+
+// Стили треугольников  
+.box {
+  margin: 0px auto;
+  //background-color: crimson;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+}
+
+svg {
+  display: block;
+}
+
+.traingle{
+  width: 100%;
+  height: 100%;
+}
+
+.traingle .left{
+  fill: #efeee9;
+}
+.traingle .right{
+  fill: #eeebdf;
+}
+
+.footer{
+  background: rgba(82, 82, 76, 0.6);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  color: white;
+
+}
+
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 34.9%;
+  margin-left: 2.66%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.footer__text{
+  line-height: 1.7rem;
+}
+
+.footer__text-transparent{
+  opacity: 0.7;
+}
+
+.footer-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 39%;
+  height: 59.5%;
+  border-left: 1px solid #a9acae;
+  border-right: 1px solid #a9acae;
+  margin-top: 28px;
+}
+
+.footer-center__top{
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.footer-center__bottom{
+  margin-left: 15px;
+}
+
+.footer-icon{
+  display: flex;
+  flex-direction: row;
+}
+
+.visitcard-icong_grey{
+  fill: #a9acae;
+}
+
+.footer-menu__link{
+  text-decoration: none;
+  margin-right: 30px;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-menu__link:hover{
+  color: #ce8a0d;
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 26%;
+  margin-left: 2.66%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}

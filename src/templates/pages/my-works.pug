@@ -4,5 +4,207 @@ block varibles
     - var title = "Мои работы"
 
 block content
-    h1 Мои работы
-    include ../common/slider.pug
+
+    .wrapper#wrapper
+        .wrapper__left#wrapper__left
+        .wrapper__right#wrapper__right
+
+    .fulmenu#fulmenu
+        a(href="./my-works.html", class="fulmenu__link margin-link0") Мои Работы
+        a(href="./blog.html", class="fulmenu__link margin-link1") Блог
+        a(href="./about.html", class="fulmenu__link margin-link2") Обо Мне
+        a(href="./login.html", class="fulmenu__link margin-link3") Авторизация
+    .bgr
+    header.header.hero.header-works
+        
+        .hero__links.visitcard__blocklink
+            div.fb
+                a(href="http://www.facebook.com/profile.php?id=100022800711759") 
+                    svg(class="visitcard-icon visitcard-icon_white")
+                        use(xlink:href="images/sprite/sprite.svg#facebook-logo")
+            div.github
+                a(href="http://github.com/MrVolKing?tab=repositories")
+                    svg(class="visitcard-icon visitcard-icon_white")
+                        use(xlink:href="images/sprite/sprite.svg#github")
+            div.in
+                a(href="#")
+                    svg(class="visitcard-icon visitcard-icon_white")
+                        use(xlink:href="images/sprite/sprite.svg#in")
+
+        .hero__menu.humburger#humburger
+            .line1#line1
+            .line2#line2
+            .line3#line3
+        .hero__visitcard
+            .hero.visitcard__foto
+                img.foto(src="./images/foto.png", alt="")
+            .hero.visitcard__name
+                span.nametext Владислав Короленко
+            .hero.visitcard__description
+                p.descriptiontext Личный сайт веб разработчика
+        .arrow-down.hero__scroll-button
+            svg(class="arrow_downsvg")
+                use(xlink:href="images/sprite/sprite.svg#arrow_down")
+        .box
+            svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+                polygon.left.color(points='0,0   0,86   500.8,86   500.8,75.5')
+                polygon.right.color(points='1000,0   1000,86   500,86   500,75.5')
+    .block__title-works
+        h1.title-works мои работы
+        .block-title__svg
+                    svg(class="aboutsvg workssvg")
+                        use(xlink:href="images/sprite/sprite.svg#works_header")
+                                                                                             // Слайдер
+    .slideshow-container#slideshow-container
+        .block-arrow
+            .arrow-left#arrow-left
+                img(src="./images/arrowleft.png", alt="", class="slidprev", id="slidprev")
+            .arrow-right#arrow-right
+                img(src="./images/arrowright.png", alt="", class="slidnext", id="slidnext")
+        .works-slider.active
+            .works-slider__left 
+                .works-page
+                    img(src="./images/workspage.png", alt="")
+            .works-slider__right
+                .works-text
+                    .works-text__title
+                        .works-text__title1 
+                            | Сайт школы онлайн
+                            br
+                            | образования 1
+                    .works-text__discription
+                        .works-text__discription1 html, css, javascript
+                    .works-text__btn
+                        img(src="./images/worksbtn.png", alt="", class="btn")
+                        a(href="http://loftschool.com")#workslink.workslink Посмотреть сайт 
+                            
+        .works-slider
+            .works-slider__left 
+                .works-page
+                    img(src="./images/workspage.png", alt="")
+            .works-slider__right
+                .works-text
+                    .works-text__title
+                        .works-text__title1 
+                            | Сайт школы онлайн
+                            br
+                            | образования 2
+                    .works-text__discription
+                        .works-text__discription1 html, css, javascript
+                    .works-text__btn
+                        img(src="./images/worksbtn.png", alt="", class="btn")
+                        a(href="http://loftschool.com")#workslink.workslink Посмотреть сайт
+        
+        .works-slider
+            .works-slider__left 
+                .works-page
+                    img(src="./images/workspage.png", alt="")
+            .works-slider__right
+                .works-text
+                    .works-text__title
+                        .works-text__title1 
+                            | Сайт школы онлайн
+                            br
+                            | образования 3
+                    .works-text__discription
+                        .works-text__discription1 html, css, javascript
+                    .works-text__btn
+                        img(src="./images/worksbtn.png", alt="", class="btn")
+                        a(href="http://loftschool.com")#workslink.workslink Посмотреть сайт
+    
+    .What-about
+        .What-about__block-title
+            h1.title-works 
+                span Что обо мне
+                    br
+                    span говорят
+            .block-title__svg.top0
+                    svg(class="aboutsvg workssvg What-aboutsvg")
+                        use(xlink:href="images/sprite/sprite.svg#about_header")
+        .what-description
+            .what-description__left
+                .quotes-svg
+                    img(src="./images/c.png", alt="")
+                p.quote
+                    | Этот парень проходил обучение веб-разработке 
+                    br
+                    | не где-то, а в LoftSchool! 2 месяца только самых
+                    br
+                    | тяжелых испытаний и бессонных ночей!
+
+                .foto-description
+                    .foto-teacher
+                        img(src="./images/alex.jpg", class="foto-teacher", alt="")
+                    .description  
+                        span.description_name Александр Серкин
+                        span.description_surname Преподаватель
+
+            .what-description__right
+                .quotes-svg
+                    img(src="./images/c.png", alt="")
+                p.quote
+                    | Этот код выдержет любые испытания. Только  
+                    br
+                    | пожалуйста, не загружается сайт на слишком старых 
+                    br
+                    | браузерах!
+
+                .foto-description
+                    .foto-teacher
+                        img(src="./images/alex.jpg", class="foto-teacher", alt="")
+                    .description  
+                        span.description_name Александр Серкин
+                        span.description_surname Преподаватель
+        
+        section.visitcard.visitcard_login.visitcard-works
+            .block-subtitle.block-subtitle_color.subtitle-works СВЯЗАТЬСЯ СО МНОЙ
+            form
+                .worksinput-block
+                    .worksinput-block__first
+                        textarea(type="text", class="input-first", placeholder="Имя")
+                    .input-block__second
+                        textarea(type="text", class="input-second", placeholder="Email")
+                    .input-block__third
+                        textarea(type="text", class="input-third", placeholder="Ваше сообщение")
+                div.visitcard__blockbutton.visitcard-blockbutton__works
+                    div.visitcard-blockbutton1.visitcard-blockbutton1_login
+                        a(href="#").visitcard-button1
+                                span.text-link.text-link_login1 Отправить
+                    div.visitcard-blockbutton3.visitcard-blockbutton2_login
+                        a(href="#").visitcard-button3
+                                span.text-link.text-link_login2 Очистить
+        .arrow-up
+            svg(class="arrow_upsvg")
+                use(xlink:href="images/sprite/sprite.svg#portf_arrow_up")
+
+    footer.footer.footer-works
+        .footer-left
+            p.footer__text Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool. 
+            p.footer__text.footer__text-transparent © Владислав Короленко <br> Cоздано с любовью к Иринюхе | 2018
+        .footer-center
+            .footer-center__top
+                .footer-menu
+                    a(class="footer-menu__link" href="./my-works.html") Мои Работы
+                    a(class="footer-menu__link" href="./about.html") Обо Мне
+                    a(class="footer-menu__link" href="./blog.html")  Блог
+                    a(class="footer-menu__link" href="./login.html") Авторизация
+            .footer-center__bottom
+                div.footer-icon
+                    div.fb
+                        a(href="http://www.facebook.com/profile.php?id=100022800711759") 
+                            svg(class="visitcard-icon visitcard-icong_grey")
+                                use(xlink:href="images/sprite/sprite.svg#facebook-logo")
+                    div.github
+                        a(href="http://github.com/MrVolKing?tab=repositories")
+                            svg(class="visitcard-icon visitcard-icong_grey")
+                                use(xlink:href="images/sprite/sprite.svg#github")
+                    div.in
+                        a(href="#")
+                            svg(class="visitcard-icon visitcard-icong_grey")
+                                use(xlink:href="images/sprite/sprite.svg#in")
+        .footer-right
+            .skype.footer__text.footer__text-transparent skype_kdn
+            .mail.footer__text.footer__text-transparent 99519851vvvk@gmail.com
+            .phone.footer__text.footer__text-transparent +38 (063) 412 03 74
+            .adress.footer__text.footer__text-transparent Одесса, пр.Шевченко, д.14
+            

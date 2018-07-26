@@ -8,18 +8,206 @@
     <meta content="width=devise-width, initial-scale=1" name="viewport">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="/styles/app.min.css">
-    <script src="scripts/common/slider.js" defer></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <script src="/scripts/app.js" defer></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
   </head>
   <body>
-    <h1>Мои работы</h1>
-    <div class="conteiner">
-      <ul id="slides">
-        <li class="slide showing"></li>
-        <li class="slide"></li>
-        <li class="slide"></li>
-      </ul>
-      <button class="controls" id="previous">&lt;</button>
-      <button class="controls" id="next">&gt;</button>
+    <div class="wrapper" id="wrapper">
+      <div class="wrapper__left" id="wrapper__left"></div>
+      <div class="wrapper__right" id="wrapper__right"></div>
     </div>
+    <div class="fulmenu" id="fulmenu"><a class="fulmenu__link margin-link0" href="./my-works.html">Мои Работы</a><a class="fulmenu__link margin-link1" href="./blog.html">Блог</a><a class="fulmenu__link margin-link2" href="./about.html">Обо Мне</a><a class="fulmenu__link margin-link3" href="./login.html">Авторизация</a></div>
+    <div class="bgr"></div>
+    <header class="header hero header-works">
+      <div class="hero__links visitcard__blocklink">
+        <div class="fb"><a href="http://www.facebook.com/profile.php?id=100022800711759"> 
+            <svg class="visitcard-icon visitcard-icon_white">
+              <use xlink:href="images/sprite/sprite.svg#facebook-logo"></use>
+            </svg></a></div>
+        <div class="github"><a href="http://github.com/MrVolKing?tab=repositories">
+            <svg class="visitcard-icon visitcard-icon_white">
+              <use xlink:href="images/sprite/sprite.svg#github"></use>
+            </svg></a></div>
+        <div class="in"><a href="#">
+            <svg class="visitcard-icon visitcard-icon_white">
+              <use xlink:href="images/sprite/sprite.svg#in"></use>
+            </svg></a></div>
+      </div>
+      <div class="hero__menu humburger" id="humburger">
+        <div class="line1" id="line1"></div>
+        <div class="line2" id="line2"></div>
+        <div class="line3" id="line3"></div>
+      </div>
+      <div class="hero__visitcard">
+        <div class="hero visitcard__foto"><img class="foto" src="./images/foto.png" alt=""></div>
+        <div class="hero visitcard__name"><span class="nametext">Владислав Короленко</span></div>
+        <div class="hero visitcard__description">
+          <p class="descriptiontext">Личный сайт веб разработчика</p>
+        </div>
+      </div>
+      <div class="arrow-down hero__scroll-button">
+        <svg class="arrow_downsvg">
+          <use xlink:href="images/sprite/sprite.svg#arrow_down"></use>
+        </svg>
+      </div>
+      <div class="box">
+        <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+          <polygon class="left color" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+          <polygon class="right color" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+        </svg>
+      </div>
+    </header>
+    <div class="block__title-works">
+      <h1 class="title-works">мои работы</h1>
+      <div class="block-title__svg">
+        <svg class="aboutsvg workssvg">
+          <use xlink:href="images/sprite/sprite.svg#works_header">
+            <!-- Слайдер-->
+          </use>
+        </svg>
+      </div>
+    </div>
+    <div class="slideshow-container" id="slideshow-container">
+      <div class="block-arrow">
+        <div class="arrow-left" id="arrow-left"><img class="slidprev" src="./images/arrowleft.png" alt="" id="slidprev"></div>
+        <div class="arrow-right" id="arrow-right"><img class="slidnext" src="./images/arrowright.png" alt="" id="slidnext"></div>
+      </div>
+      <div class="works-slider active">
+        <div class="works-slider__left"> 
+          <div class="works-page"><img src="./images/workspage.png" alt=""></div>
+        </div>
+        <div class="works-slider__right">
+          <div class="works-text">
+            <div class="works-text__title">
+              <div class="works-text__title1">
+                 Сайт школы онлайн<br>образования 1</div>
+            </div>
+            <div class="works-text__discription">
+              <div class="works-text__discription1">html, css, javascript</div>
+            </div>
+            <div class="works-text__btn"><img class="btn" src="./images/worksbtn.png" alt=""><a class="workslink" href="http://loftschool.com" id="workslink">Посмотреть сайт </a></div>
+          </div>
+        </div>
+      </div>
+      <div class="works-slider">
+        <div class="works-slider__left"> 
+          <div class="works-page"><img src="./images/workspage.png" alt=""></div>
+        </div>
+        <div class="works-slider__right">
+          <div class="works-text">
+            <div class="works-text__title">
+              <div class="works-text__title1">
+                 Сайт школы онлайн<br>образования 2</div>
+            </div>
+            <div class="works-text__discription">
+              <div class="works-text__discription1">html, css, javascript</div>
+            </div>
+            <div class="works-text__btn"><img class="btn" src="./images/worksbtn.png" alt=""><a class="workslink" href="http://loftschool.com" id="workslink">Посмотреть сайт</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="works-slider">
+        <div class="works-slider__left"> 
+          <div class="works-page"><img src="./images/workspage.png" alt=""></div>
+        </div>
+        <div class="works-slider__right">
+          <div class="works-text">
+            <div class="works-text__title">
+              <div class="works-text__title1">
+                 Сайт школы онлайн<br>образования 3</div>
+            </div>
+            <div class="works-text__discription">
+              <div class="works-text__discription1">html, css, javascript</div>
+            </div>
+            <div class="works-text__btn"><img class="btn" src="./images/worksbtn.png" alt=""><a class="workslink" href="http://loftschool.com" id="workslink">Посмотреть сайт</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="What-about">
+      <div class="What-about__block-title">
+        <h1 class="title-works"> <span>Что обо мне<br><span>говорят</span></span></h1>
+        <div class="block-title__svg top0">
+          <svg class="aboutsvg workssvg What-aboutsvg">
+            <use xlink:href="images/sprite/sprite.svg#about_header"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="what-description">
+        <div class="what-description__left">
+          <div class="quotes-svg"><img src="./images/c.png" alt=""></div>
+          <p class="quote">Этот парень проходил обучение веб-разработке <br>не где-то, а в LoftSchool! 2 месяца только самых<br>тяжелых испытаний и бессонных ночей!</p>
+          <div class="foto-description">
+            <div class="foto-teacher"><img class="foto-teacher" src="./images/alex.jpg" alt=""></div>
+            <div class="description"> <span class="description_name">Александр Серкин</span><span class="description_surname">Преподаватель</span></div>
+          </div>
+        </div>
+        <div class="what-description__right">
+          <div class="quotes-svg"><img src="./images/c.png" alt=""></div>
+          <p class="quote">Этот код выдержет любые испытания. Только  <br>пожалуйста, не загружается сайт на слишком старых <br>браузерах!</p>
+          <div class="foto-description">
+            <div class="foto-teacher"><img class="foto-teacher" src="./images/alex.jpg" alt=""></div>
+            <div class="description"> <span class="description_name">Александр Серкин</span><span class="description_surname">Преподаватель</span></div>
+          </div>
+        </div>
+      </div>
+      <section class="visitcard visitcard_login visitcard-works">
+        <div class="block-subtitle block-subtitle_color subtitle-works">СВЯЗАТЬСЯ СО МНОЙ</div>
+        <form>
+          <div class="worksinput-block">
+            <div class="worksinput-block__first">
+              <textarea class="input-first" type="text" placeholder="Имя"></textarea>
+            </div>
+            <div class="input-block__second">
+              <textarea class="input-second" type="text" placeholder="Email"></textarea>
+            </div>
+            <div class="input-block__third">
+              <textarea class="input-third" type="text" placeholder="Ваше сообщение"></textarea>
+            </div>
+          </div>
+          <div class="visitcard__blockbutton visitcard-blockbutton__works">
+            <div class="visitcard-blockbutton1 visitcard-blockbutton1_login"><a class="visitcard-button1" href="#"><span class="text-link text-link_login1">Отправить</span></a></div>
+            <div class="visitcard-blockbutton3 visitcard-blockbutton2_login"><a class="visitcard-button3" href="#"><span class="text-link text-link_login2">Очистить</span></a></div>
+          </div>
+        </form>
+      </section>
+      <div class="arrow-up">
+        <svg class="arrow_upsvg">
+          <use xlink:href="images/sprite/sprite.svg#portf_arrow_up"></use>
+        </svg>
+      </div>
+    </div>
+    <footer class="footer footer-works">
+      <div class="footer-left">
+        <p class="footer__text">Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool. </p>
+        <p class="footer__text footer__text-transparent">© Владислав Короленко <br> Cоздано с любовью к Иринюхе | 2018</p>
+      </div>
+      <div class="footer-center">
+        <div class="footer-center__top">
+          <div class="footer-menu"><a class="footer-menu__link" href="./my-works.html">Мои Работы</a><a class="footer-menu__link" href="./about.html">Обо Мне</a><a class="footer-menu__link" href="./blog.html"> Блог</a><a class="footer-menu__link" href="./login.html">Авторизация</a></div>
+        </div>
+        <div class="footer-center__bottom">
+          <div class="footer-icon">
+            <div class="fb"><a href="http://www.facebook.com/profile.php?id=100022800711759"> 
+                <svg class="visitcard-icon visitcard-icong_grey">
+                  <use xlink:href="images/sprite/sprite.svg#facebook-logo"></use>
+                </svg></a></div>
+            <div class="github"><a href="http://github.com/MrVolKing?tab=repositories">
+                <svg class="visitcard-icon visitcard-icong_grey">
+                  <use xlink:href="images/sprite/sprite.svg#github"></use>
+                </svg></a></div>
+            <div class="in"><a href="#">
+                <svg class="visitcard-icon visitcard-icong_grey">
+                  <use xlink:href="images/sprite/sprite.svg#in"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="skype footer__text footer__text-transparent">skype_kdn</div>
+        <div class="mail footer__text footer__text-transparent">99519851vvvk@gmail.com</div>
+        <div class="phone footer__text footer__text-transparent">+38 (063) 412 03 74</div>
+        <div class="adress footer__text footer__text-transparent">Одесса, пр.Шевченко, д.14</div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,3 +1,9 @@
-const slider = require('./common/slider');
 
-slider(); // Инициализация
+
+require('./common/blog');
+require('./common/flipper');
+require('./common/slider');
+require('./common/scroll');
+require('./common/burger');
+
+

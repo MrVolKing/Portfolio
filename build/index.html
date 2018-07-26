@@ -8,35 +8,90 @@
     <meta content="width=devise-width, initial-scale=1" name="viewport">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="/styles/app.min.css">
-    <script src="scripts/common/slider.js" defer></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <script src="/scripts/app.js" defer></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
   </head>
   <body>
     <div class="content">
-      <button class="content_button">Авторизироваться</button>
-      <div class="centr">
-        <div class="visitcard"> 
-          <div class="visitcard_foto"><img class="foto" src="./images/foto.png" alt=""></div>
-          <div class="visitcard_name">
-            <p class="visitcard_nametext">Владислав Короленко</p>
-          </div>
-          <div class="visitcard_description">
-            <p class="visitcard_descriptiontext">Личный сайт веб разработчика</p>
-          </div>
-          <div class="visitcard_blocklink">
-            <div class="visitcard_blocklink1"><a href="http://www.facebook.com/profile.php?id=100022800711759"> <img src="./images/f.png" alt=""></a></div>
-            <div class="visitcard_blocklink2"><a href="http://github.com/MrVolKing?tab=repositories"><img src="./images/github.png" alt=""></a></div>
-            <div class="visitcard_blocklink3"><a><img src="./images/in.png" alt=""></a></div>
-          </div>
-          <div class="visitcard_blockbutton">
-            <div class="visitcard_blockbutton1"><a class="visitcard_button1" href="./my-works.html">Мои Работы</a></div>
-            <div class="visitcard_blockbutton2"><a class="visitcard_button2" href="./about.html">Обо мне</a></div>
-            <div class="visitcard_blockbutton3"><a class="visitcard_button3" href="./blog.html">Блог</a></div>
-          </div>
+      <div class="bgr"></div>
+      <button class="flipper-rotate content-button" id="flipper-rotate">Авторизироваться</button>
+      <div class="flipper" id="flipper">
+        <div class="flipper__front">
+          <section class="visitcard"> 
+            <div class="visitcard__foto"><img class="foto" src="./images/foto.png" alt=""></div>
+            <div class="visitcard__name"><span class="nametext">Владислав Короленко</span></div>
+            <div class="visitcard__description">
+              <p class="descriptiontext">Личный сайт веб разработчика</p>
+            </div>
+            <div class="visitcard__blocklink">
+              <div class="fb"><a href="http://www.facebook.com/profile.php?id=100022800711759"> 
+                  <svg class="visitcard-icon">
+                    <use xlink:href="images/sprite/sprite.svg#facebook-logo"></use>
+                  </svg></a></div>
+              <div class="github"><a href="http://github.com/MrVolKing?tab=repositories">
+                  <svg class="visitcard-icon">
+                    <use xlink:href="images/sprite/sprite.svg#github"></use>
+                  </svg></a></div>
+              <div class="in"><a href="#">
+                  <svg class="visitcard-icon">
+                    <use xlink:href="images/sprite/sprite.svg#in"></use>
+                  </svg></a></div>
+            </div>
+            <div class="visitcard__blockbutton">
+              <div class="visitcard-blockbutton1"><a class="visitcard-button1" href="./my-works.html"><span class="text-link">Мои Работы</span></a></div>
+              <div class="visitcard-blockbutton2"><a class="visitcard-button2" href="./about.html"><span class="text-link">Обо мне</span></a></div>
+              <div class="visitcard-blockbutton3"><a class="visitcard-button3" href="./blog.html"><span class="text-link">Блог</span></a></div>
+            </div>
+          </section>
+        </div>
+        <div class="flipper__back">
+          <section class="visitcard visitcard_login">
+            <div class="block-subtitle block-subtitle_color">АВТОРИЗИРУЙТЕСЬ</div>
+            <div class="inputs-block">
+              <div class="input-block input__ligon">
+                <div class="block-svg">
+                  <svg class="input-icon">
+                    <use xlink:href="images/sprite/sprite.svg#login"></use>
+                  </svg>
+                </div>
+                <input class="input input-icon1" type="text" placeholder="Логин">
+              </div>
+              <div class="input-block input__pasword">
+                <div class="block-svg">
+                  <svg class="input-icon">
+                    <use xlink:href="images/sprite/sprite.svg#password"></use>
+                  </svg>
+                </div>
+                <input class="input input-icon2" type="text" placeholder="Пароль">
+              </div>
+            </div>
+            <div class="capcha">
+              <div class="one"> 
+                <label>
+                  <input class="checkbox" type="checkbox" name="checkbox-test"><span class="checkbox-custom"></span><span class="label">Я человек</span>
+                </label>
+              </div>
+              <div class="twoo">
+                <div class="twoo__title"><span>Вы точно не робот?</span></div>
+                <div class="twoo__content-input">
+                  <label class="radio1">
+                    <input class="radio" type="radio" name="radio-test"><span class="radio-custom"></span><span class="label">Да</span>
+                  </label>
+                  <label class="radio2">
+                    <input class="radio" type="radio" name="radio-test"><span class="radio-custom"></span><span class="label">Не уверен</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="visitcard__blockbutton visitcard__blockbutton-login">
+              <div class="visitcard-blockbutton1 visitcard-blockbutton1_login"><a class="visitcard-button1" href="./index.html"><span class="text-link text-link_login1">На главную</span></a></div>
+              <div class="visitcard-blockbutton3 visitcard-blockbutton2_login"><a class="visitcard-button3" href="#"><span class="text-link text-link_login2">Войти</span></a></div>
+            </div>
+          </section>
         </div>
       </div>
-      <div class="text">
-        <p>© Владюха Короленко | создано с любовью к Иринюхе | 2018</p>
-      </div>
+      <footer class="text">
+        <p>© Влад Короленко | 2018</p>
+      </footer>
     </div>
   </body>
 </html>

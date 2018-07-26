@@ -8,23 +8,115 @@
     <meta content="width=devise-width, initial-scale=1" name="viewport">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="/styles/app.min.css">
-    <script src="scripts/common/slider.js" defer></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <script src="/scripts/app.js" defer></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
   </head>
   <body>
-    <h1>Блог</h1>
-    <ul>
-      <li>
-        <h2>Заголовок статьи</h2>
-        <p>Жил был...</p>
-      </li>
-      <li>
-        <h2>Еще статья</h2>
-        <p>воевал очень долго</p>
-      </li>
-      <li>
-        <h2>Последняя статья</h2>
-        <p>и жили они долго и счастье</p>
-      </li>
-    </ul>
+    <div class="wrapper" id="wrapper">
+      <div class="wrapper__left" id="wrapper__left"></div>
+      <div class="wrapper__right" id="wrapper__right"></div>
+    </div>
+    <div class="fulmenu" id="fulmenu"><a class="fulmenu__link margin-link0" href="./my-works.html">Мои Работы</a><a class="fulmenu__link margin-link1" href="./blog.html">Блог</a><a class="fulmenu__link margin-link2" href="./about.html">Обо Мне</a><a class="fulmenu__link margin-link3" href="./login.html">Авторизация</a></div>
+    <header class="header hero header-blog">
+      <div class="hero__links visitcard__blocklink">
+        <div class="fb"><a href="http://www.facebook.com/profile.php?id=100022800711759"> 
+            <svg class="visitcard-icon visitcard-icon_white">
+              <use xlink:href="images/sprite/sprite.svg#facebook-logo"></use>
+            </svg></a></div>
+        <div class="github"><a href="http://github.com/MrVolKing?tab=repositories">
+            <svg class="visitcard-icon visitcard-icon_white">
+              <use xlink:href="images/sprite/sprite.svg#github"></use>
+            </svg></a></div>
+        <div class="in"><a href="#">
+            <svg class="visitcard-icon visitcard-icon_white">
+              <use xlink:href="images/sprite/sprite.svg#in"></use>
+            </svg></a></div>
+      </div>
+      <div class="hero__menu humburger" id="humburger">
+        <div class="line1" id="line1"></div>
+        <div class="line2" id="line2"></div>
+        <div class="line3" id="line3"></div>
+      </div>
+      <div class="header-blog_foto">
+        <div class="hero visitcard__foto"><img class="foto" src="./images/foto.png" alt=""></div>
+      </div>
+      <div class="header-description">
+        <div class="title-blog">Блог</div>
+        <div class="header-description_text">Cтатьи, которые я написал</div>
+      </div>
+      <div class="box">
+        <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+          <polygon class="blogtraingle" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+          <polygon class="blogtraingle" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+        </svg>
+      </div>
+    </header>
+    <section class="blog-content blog">
+      <div class="blog-content__left">
+        <aside class="blog__article-titles" id="blog__article-titles">
+          <ul class="blog__article-list" id="blog__article-list">
+            <li class="blog__article-title" id="0"><a class="blog__article-link" href="#Самое важное в SASS">Самое важное в SASS</a></li>
+            <li class="blog__article-title" id="1"><a class="blog__article-link" href="#Приёмы в вёрстке, без которых не обходится ни один сайт">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
+            <li class="blog__article-title" id="2"><a class="blog__article-link" href="#Самый необходимый набор Gulp плагинов">Самый необходимый набор Gulp плагинов</a></li>
+            <li class="blog__article-title" id="3"><a class="blog__article-link" href="#Почему я выбрал Pug">Почему я выбрал Pug</a></li>
+          </ul>
+          <div class="blog__article-adaptive-btn" id="blog__article-adaptive-btn"></div>
+        </aside>
+      </div>
+      <div class="blog-content__right"><a name="Самое важное в SASS"></a>
+        <div class="blog__article" data-idtitle="0">
+          <div class="blog__title">Самое важное в SASS</div>
+          <div class="blog__date">12.07.2017</div>
+          <div class="blog__text simple-text">Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</div>
+        </div><a name="Приёмы в вёрстке, без которых не обходится ни один сайт"></a>
+        <div class="blog__article" data-idtitle="1">
+          <div class="blog__title">Приёмы в вёрстке, без которых не обходится ни один сайт</div>
+          <div class="blog__date">12.07.2017</div>
+          <div class="blog__text simple-text">Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</div>
+        </div><a name="Самый необходимый набор Gulp плагинов"></a>
+        <div class="blog__article" data-idtitle="2">
+          <div class="blog__title">Самый необходимый набор Gulp плагинов</div>
+          <div class="blog__date">12.07.2017</div>
+          <div class="blog__text simple-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio sint a saepe repellat! Sapiente alias quam amet assumenda obcaecati, quibusdam nisi dignissimos cum reiciendis ab sed doloribus nam eaque est impedit molestiae. In fugit sunt quia tenetur unde blanditiis quae voluptatum possimus, consectetur, similique debitis eos fugiat eligendi, saepe, dolorem placeat veniam. Iusto, illo dicta ipsam blanditiis eum molestias delectus quia veritatis. Voluptas facere nobis, neque temporibus, officia modi veritatis id deleniti mollitia soluta necessitatibus incidunt perspiciatis fugiat, a eum similique, nulla totam quasi dicta. Alias dolores cupiditate laborum voluptatem! Eius, minima placeat quam laborum repudiandae maxime nisi deserunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio sint a saepe repellat! Sapiente alias quam amet assumenda obcaecati, quibusdam nisi dignissimos cum reiciendis ab sed doloribus nam eaque est impedit molestiae. In fugit sunt quia tenetur unde blanditiis quae voluptatum possimus, consectetur, similique debitis eos fugiat eligendi, saepe, dolorem placeat veniam. Iusto, illo dicta ipsam blanditiis eum molestias delectus quia veritatis. Voluptas facere nobis, neque temporibus, officia modi veritatis id deleniti mollitia soluta necessitatibus incidunt perspiciatis fugiat, a eum similique, nulla totam quasi dicta. Alias dolores cupiditate laborum voluptatem! Eius, minima placeat quam laborum repudiandae maxime nisi deserunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio sint a saepe repellat! Sapiente alias quam amet assumenda obcaecati, quibusdam nisi dignissimos cum reiciendis ab sed doloribus nam eaque est impedit molestiae. In fugit sunt quia tenetur unde blanditiis quae voluptatum possimus, consectetur, similique debitis eos fugiat eligendi, saepe, dolorem placeat veniam. Iusto, illo dicta ipsam blanditiis eum molestias delectus quia veritatis. Voluptas facere nobis, neque temporibus, officia modi veritatis id deleniti mollitia soluta necessitatibus incidunt perspiciatis fugiat, a eum similique, nulla totam quasi dicta. Alias dolores cupiditate laborum voluptatem! Eius, minima placeat quam laborum repudiandae maxime nisi deserunt.</div>
+        </div><a name="Почему я выбрал Pug"></a>
+        <div class="blog__article" data-idtitle="3">
+          <div class="blog__title">Почему я выбрал Pug</div>
+          <div class="blog__date">12.07.2017</div>
+          <div class="blog__text simple-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio sint a saepe repellat! Sapiente alias quam amet assumenda obcaecati, quibusdam nisi dignissimos cum reiciendis ab sed doloribus nam eaque est impedit molestiae. In fugit sunt quia tenetur unde blanditiis quae voluptatum possimus, consectetur, similique debitis eos fugiat eligendi, saepe, dolorem placeat veniam. Iusto, illo dicta ipsam blanditiis eum molestias delectus quia veritatis. Voluptas facere nobis, neque temporibus, officia modi veritatis id deleniti mollitia soluta necessitatibus incidunt perspiciatis fugiat, a eum similique, nulla totam quasi dicta. Alias dolores cupiditate laborum voluptatem! Eius, minima placeat quam laborum repudiandae maxime nisi deserunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio sint a saepe repellat! Sapiente alias quam amet assumenda obcaecati, quibusdam nisi dignissimos cum reiciendis ab sed doloribus nam eaque est impedit molestiae. In fugit sunt quia tenetur unde blanditiis quae voluptatum possimus, consectetur, similique debitis eos fugiat eligendi, saepe, dolorem placeat veniam. Iusto, illo dicta ipsam blanditiis eum molestias delectus quia veritatis. Voluptas facere nobis, neque temporibus, officia modi veritatis id deleniti mollitia soluta necessitatibus incidunt perspiciatis fugiat, a eum similique, nulla totam quasi dicta. Alias dolores cupiditate laborum voluptatem! Eius, minima placeat quam laborum repudiandae maxime nisi deserunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero optio sint a saepe repellat! Sapiente alias quam amet assumenda obcaecati, quibusdam nisi dignissimos cum reiciendis ab sed doloribus nam eaque est impedit molestiae. In fugit sunt quia tenetur unde blanditiis quae voluptatum possimus, consectetur, similique debitis eos fugiat eligendi, saepe, dolorem placeat veniam. Iusto, illo dicta ipsam blanditiis eum molestias delectus quia veritatis. Voluptas facere nobis, neque temporibus, officia modi veritatis id deleniti mollitia soluta necessitatibus incidunt perspiciatis fugiat, a eum similique, nulla totam quasi dicta. Alias dolores cupiditate laborum voluptatem! Eius, minima placeat quam laborum repudiandae maxime nisi deserunt.</div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer footer-works">
+      <div class="footer-left">
+        <p class="footer__text">Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool. </p>
+        <p class="footer__text footer__text-transparent">© Владислав Короленко <br> Cоздано с любовью к Иринюхе | 2018</p>
+      </div>
+      <div class="footer-center">
+        <div class="footer-center__top">
+          <div class="footer-menu"><a class="footer-menu__link" href="./my-works.html">Мои Работы</a><a class="footer-menu__link" href="./about.html">Обо Мне</a><a class="footer-menu__link" href="./blog.html">Блог</a><a class="footer-menu__link" href="./login.html">Авторизация</a></div>
+        </div>
+        <div class="footer-center__bottom">
+          <div class="footer-icon">
+            <div class="fb"><a href="http://www.facebook.com/profile.php?id=100022800711759"> 
+                <svg class="visitcard-icon visitcard-icong_grey">
+                  <use xlink:href="images/sprite/sprite.svg#facebook-logo"></use>
+                </svg></a></div>
+            <div class="github"><a href="http://github.com/MrVolKing?tab=repositories">
+                <svg class="visitcard-icon visitcard-icong_grey">
+                  <use xlink:href="images/sprite/sprite.svg#github"></use>
+                </svg></a></div>
+            <div class="in"><a href="#">
+                <svg class="visitcard-icon visitcard-icong_grey">
+                  <use xlink:href="images/sprite/sprite.svg#in"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="skype footer__text footer__text-transparent">skype_kdn</div>
+        <div class="mail footer__text footer__text-transparent">99519851vvvk@gmail.com</div>
+        <div class="phone footer__text footer__text-transparent">+38 (063) 412 03 74</div>
+        <div class="adress footer__text footer__text-transparent">Одесса, пр.Шевченко, д.14</div>
+      </div>
+    </footer>
   </body>
 </html>

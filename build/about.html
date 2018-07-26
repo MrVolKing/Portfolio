@@ -8,17 +8,269 @@
     <meta content="width=devise-width, initial-scale=1" name="viewport">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="/styles/app.min.css">
-    <script src="scripts/common/slider.js" defer></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <script src="/scripts/app.js" defer></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
   </head>
   <body>
-    <h1>Обо мне</h1>
-    <p>Я умею
-      <ul class="technologies">
-        <li><img src="images/1.jpg" alt=""></li>
-        <li><img src="images/2.jpg" alt=""></li>
-        <li><img src="images/3.jpg" alt=""></li>
-        <li><img src="images/4.jpg" alt=""></li>
-      </ul>
-    </p>
+    <div class="wrapper" id="wrapper">
+      <div class="wrapper__left" id="wrapper__left"></div>
+      <div class="wrapper__right" id="wrapper__right"></div>
+    </div>
+    <div class="fulmenu" id="fulmenu"><a class="fulmenu__link margin-link0" href="./my-works.html">Мои Работы</a><a class="fulmenu__link margin-link1" href="./blog.html">Блог</a><a class="fulmenu__link margin-link2" href="./about.html">Обо Мне</a><a class="fulmenu__link margin-link3" href="./login.html">Авторизация</a></div>
+    <div class="bgr"></div>
+    <header class="header hero" id="header">
+      <div class="hero__links visitcard__blocklink">
+        <div class="fb"><a href="http://www.facebook.com/profile.php?id=100022800711759"> 
+            <svg class="visitcard-icon visitcard-icon_white">
+              <use xlink:href="images/sprite/sprite.svg#facebook-logo"></use>
+            </svg></a></div>
+        <div class="github"><a href="http://github.com/MrVolKing?tab=repositories">
+            <svg class="visitcard-icon visitcard-icon_white">
+              <use xlink:href="images/sprite/sprite.svg#github"></use>
+            </svg></a></div>
+        <div class="in"><a href="#">
+            <svg class="visitcard-icon visitcard-icon_white">
+              <use xlink:href="images/sprite/sprite.svg#in"></use>
+            </svg></a></div>
+      </div>
+      <div class="hero__menu humburger" id="humburger">
+        <div class="line1" id="line1"></div>
+        <div class="line2" id="line2"></div>
+        <div class="line3" id="line3"></div>
+      </div>
+      <div class="hero__visitcard">
+        <div class="hero visitcard__foto"><img class="foto" src="./images/foto.png" alt=""></div>
+        <div class="hero visitcard__name"><span class="nametext">Владислав Короленко</span></div>
+        <div class="hero visitcard__description">
+          <p class="descriptiontext">Личный сайт веб разработчика</p>
+        </div>
+      </div>
+      <div class="arrow-down hero__scroll-button">
+        <svg class="arrow_downsvg arrow-about">
+          <use xlink:href="images/sprite/sprite.svg#arrow_down"></use>
+        </svg>
+      </div>
+      <div class="box">
+        <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+          <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+          <polygon class="right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+        </svg>
+      </div>
+    </header>
+    <div class="section about">
+      <div class="about__left about__left_whiite">
+        <div class="about__left-title">
+          <h1 class="block-title">Обо мне</h1>
+          <div class="block-title__svg top0">
+            <svg class="aboutsvg">
+              <use xlink:href="images/sprite/sprite.svg#about_header"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="about__left-description">
+          <div class="user-description">
+            <div class="user-description__image"><img class="user-description__avatar" src="./images/n.jpg" alt=""></div>
+            <div class="user-description__title">
+              <div class="block-subtitle">Кто Я</div>
+            </div>
+            <div class="user-description__text">
+              <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, provident. Necessitatibus modi, nisi soluta numquam ex minus eius velit. Possimus ipsam voluptatibus reprehenderit voluptatem doloribus consectetur voluptatum, a ipsum quasi.</p>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, porro accusamus veritatis excepturi iste totam est cumque voluptatum esse eius doloremque sed omnis libero a cupiditate iure, dolor distinctio quam.</p>
+              </div>
+              <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque quis omnis earum modi facere officiis amet, eos error reiciendis veniam provident obcaecati ut architecto id voluptatum laborum, dolores rem?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__right about__right_gray">
+        <div class="about__right-title">
+          <div class="block-subtitle transformer"> <span>Чем я могу<br>быть вам полезен</span></div>
+        </div>
+        <div class="about__right-description">
+          <p class="about__right-descriptiontext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam labore praesentium nostrum, veritatis libero natus officiis odit illum inventore, sed error? Incidunt quibusdam mollitia minus rem consequatur eum amet cum!</p>
+        </div>
+        <div class="about__right-content">  
+          <div class="skills-list">
+            <div class="skills-list__item">
+              <div class="skills-row">
+                <h3 class="skills-row__title">Frontend</h3>
+                <div class="skills-row__list">
+                  <div class="skills-row__item">
+                    <div class="skill">
+                      <ul class="wrap">
+                        <li class="item">
+                          <div class="nameskill"><span>HTML5</span></div>
+                          <svg class="circles" viewbox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-90" id="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                        </li>
+                        <li class="item">
+                          <div class="nameskill"><span>CSS3</span></div>
+                          <svg class="circles" viewbox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-80" id="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                        </li>
+                        <li class="item">
+                          <div class="nameskill"><span>Java Script</span></div>
+                          <svg class="circles" viewbox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-10" id="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-list__item">
+              <div class="skills-row">
+                <h3 class="skills-row__title">Backend</h3>
+                <div class="skills-row__list">
+                  <div class="skills-row__item">
+                    <div class="skill">
+                      <ul class="wrap">
+                        <li class="item">
+                          <div class="nameskill"><span>PHP</span></div>
+                          <svg class="circles" viewbox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-35" id="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                        </li>
+                        <li class="item">
+                          <div class="nameskill"><span>Node.js</span></div>
+                          <svg class="circles" viewbox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-85" id="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-list__item">
+              <div class="skills-row">
+                <h3 class="skills-row__title">WorkFlow</h3>
+                <div class="skills-row__list">
+                  <div class="skills-row__item">
+                    <div class="skill">
+                      <ul class="wrap">
+                        <li class="item">
+                          <div class="nameskill"><span>Git</span></div>
+                          <svg class="circles" viewbox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-90" id="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                        </li>
+                        <li class="item">
+                          <div class="nameskill"><span>Gulp</span></div>
+                          <svg class="circles" viewbox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-80" id="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                        </li>
+                        <li class="item">
+                          <div class="nameskill"><span>Bower</span></div>
+                          <svg class="circles" viewbox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-60" id="circle__second" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section-map">
+      <div class="google-map">
+         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.858772472106!2d30.752386615543934!3d46.45149527912506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633e7823f849f%3A0xc7b286171498ecd8!2z0L_RgNC-0YHQvy4g0KjQtdCy0YfQtdC90LrQviwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1527600744982" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      <div class="map__data">
+        <div class="contacts">
+          <div class="contacts__title">
+            <div class="block-subtitle">Контакты</div>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <div class="contacts-row__icon">
+                  <svg class="map__dada-icon">
+                    <use xlink:href="images/sprite/sprite.svg#skype"> </use>
+                  </svg>
+                </div>
+                <div class="contacts-row__title">skype_kor</div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts-row__icon">
+                  <svg class="map__dada-icon">
+                    <use xlink:href="images/sprite/sprite.svg#envelope2"> </use>
+                  </svg>
+                </div>
+                <div class="contacts-row__title">85894030r</div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts-row__icon">
+                  <svg class="map__dada-icon">
+                    <use xlink:href="images/sprite/sprite.svg#phone2"> </use>
+                  </svg>
+                </div>
+                <div class="contacts-row__title">skype_kor</div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts-row__icon">
+                  <svg class="map__dada-icon">
+                    <use xlink:href="images/sprite/sprite.svg#map_marker"> </use>
+                  </svg>
+                </div>
+                <div class="contacts-row__title">skype_kor</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-left">
+        <p class="footer__text">Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool. </p>
+        <p class="footer__text footer__text-transparent">© Владислав Короленко <br> Cоздано с любовью к Иринюхе | 2018</p>
+      </div>
+      <div class="footer-center">
+        <div class="footer-center__top">
+          <div class="footer-menu"><a class="footer-menu__link" href="./my-works.html">Мои Работы</a><a class="footer-menu__link" href="./about.html">Обо Мне</a><a class="footer-menu__link" href="./blog.html">Блог</a><a class="footer-menu__link" href="./login.html">Авторизация</a></div>
+        </div>
+        <div class="footer-center__bottom">
+          <div class="footer-icon">
+            <div class="fb"><a href="http://www.facebook.com/profile.php?id=100022800711759"> 
+                <svg class="visitcard-icon visitcard-icong_grey">
+                  <use xlink:href="images/sprite/sprite.svg#facebook-logo"></use>
+                </svg></a></div>
+            <div class="github"><a href="http://github.com/MrVolKing?tab=repositories">
+                <svg class="visitcard-icon visitcard-icong_grey">
+                  <use xlink:href="images/sprite/sprite.svg#github"></use>
+                </svg></a></div>
+            <div class="in"><a href="#">
+                <svg class="visitcard-icon visitcard-icong_grey">
+                  <use xlink:href="images/sprite/sprite.svg#in"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="skype footer__text footer__text-transparent">skype_kdn</div>
+        <div class="mail footer__text footer__text-transparent">99519851vvvk@gmail.com</div>
+        <div class="phone footer__text footer__text-transparent">+38 (063) 412 03 74</div>
+        <div class="adress footer__text footer__text-transparent">Одесса, пр.Шевченко, д.14</div>
+      </div>
+    </footer>
   </body>
 </html>

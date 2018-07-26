@@ -1,0 +1,166 @@
+.block-subtitle_color{
+    color: rgb(250, 250, 250);
+}
+
+.inputs-block{
+    text-align: center;
+}
+
+.input-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input{
+    width: 300px;
+    height: 46px;
+    border: none;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.input::placeholder{
+    //color: aqua;
+    position: relative;
+    left: 20px;
+}
+
+.block-svg{
+    background-color: #f0efe9;
+    width: 46px;
+    height: 46px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.input-icon{
+    fill: #c4cbcd;
+    width: 16px;
+    height: 18px;
+    top: 50%;
+    left: 49%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
+.capcha{
+    color: white;
+}
+
+.one{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkbox, 
+.radio {
+	display: none;
+}
+
+.checkbox-custom,
+.radio-custom {
+	position: relative;     
+	width: 20px;             
+	height: 20px;            
+    background-color: white;
+    border-radius: 1px;
+}
+
+.checkbox-custom,
+.label,
+.radio-custom {
+    margin: 0px 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+    content: url(../images/check.png); 
+    background-color: #e7a731;
+    border-radius: 1px;
+    width: 20px;
+    height: 20px;            
+	display: block;			 
+	position: absolute;      
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+	border-radius: 50%;
+}
+
+.twoo__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.twoo__content-input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-custom {
+	position: relative;     
+	width: 20px;             
+	height: 20px;            
+    background-color: white;
+    border: 1px solid #c4cbcd;
+}
+
+.radio:checked + .radio-custom::before {
+	content: url(../images/ellipse.png);             
+	position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-55%, -57%);
+}
+
+.radio1,
+.radio2{
+    margin: 0px 20px;
+}
+
+.visitcard__blockbutton-login{
+    margin: 0;
+    position: relative;
+    top: 46px;
+}
+
+.visitcard-blockbutton1_login, .visitcard-blockbutton2_login{
+    width: 50%;
+}
+
+.visitcard-blockbutton2_login{
+    border-left: 0.5px solid white;
+}
+
+.visitcard-blockbutton1_login{
+    border-right: 0.5px solid white;
+}
+
+.text-link_login1{
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+
+.text-link_login2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+}

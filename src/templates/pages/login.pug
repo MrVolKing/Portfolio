@@ -1,0 +1,49 @@
+extends ../template
+
+block varibles
+    - var title = "Авторизация"
+
+block content
+    .content
+        .bgr
+        section.visitcard.visitcard_login
+            .block-subtitle.block-subtitle_color АВТОРИЗИРУЙТЕСЬ
+            .inputs-block
+                .input-block.input__ligon
+                    .block-svg
+                        svg(class="input-icon")
+                            use(xlink:href="images/sprite/sprite.svg#login")
+                    input(type="text", class="input input-icon1", placeholder="Логин")
+                .input-block.input__pasword
+                    .block-svg
+                        svg(class="input-icon")
+                            use(xlink:href="images/sprite/sprite.svg#password")
+                    input(type="text", class="input input-icon2", placeholder="Пароль")
+            .capcha
+                .one 
+                    label
+                        input(class="checkbox", type="checkbox", name="checkbox-test")
+                        span.checkbox-custom
+                        span.label Я человек
+                .twoo
+                    .twoo__title
+                        span Вы точно не робот?
+                    .twoo__content-input
+                        label.radio1
+                            input(class="radio", type="radio", name="radio-test")
+                            span.radio-custom
+                            span.label Да
+                        label.radio2
+                            input(class="radio", type="radio", name="radio-test")
+                            span.radio-custom
+                            span.label Не уверен
+
+            div.visitcard__blockbutton.visitcard__blockbutton-login
+                div.visitcard-blockbutton1.visitcard-blockbutton1_login
+                    a(href="./index.html").visitcard-button1
+                            span.text-link.text-link_login1 На главную
+                div.visitcard-blockbutton3.visitcard-blockbutton2_login
+                    a(href="#").visitcard-button3
+                            span.text-link.text-link_login2 Войти
+        footer.text
+            p © Владюха Короленко | создано с любовью к Иринюхе | 2018

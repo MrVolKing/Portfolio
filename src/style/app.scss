@@ -2,12 +2,30 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    src: url('fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+}
+
+@font-face {
+    font-family: 'sansus'; /* Имя шрифта */
+    src: url(/fonts/Sansus-Webissimo-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+
 body{
-   
-    background: #ccc;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 @import 'common/menu.scss';
 @import 'common/technologies.scss';
 @import 'common/slider.scss';
 @import 'index.scss';
+@import 'about.scss';
+@import 'login.scss';
+@import 'my-works.scss';
+@import 'blog.scss';
+@import 'flipper.scss';

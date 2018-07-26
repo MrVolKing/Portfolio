@@ -1,0 +1,634 @@
+// Фул скрин
+.wrapper{
+    //display: none;
+    display: flex;
+    flex-direction: row; 
+    position: fixed;
+    top: 0;
+    z-index: 100; 
+    width: 100%; 
+    transform: translateY(-100%); 
+}
+
+.wrapper-visible{
+    
+    transform: translateY(0); 
+}
+
+.wrapper__left,
+.wrapper__right{
+    width: 50%;
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(239, 171, 38, 0.8);
+    transition: 1s;
+}
+
+.wrapper__left{
+    transform: translateX(-100%);
+}
+
+.wrapper__right{
+    transform: translateX(100%)
+}
+
+.wrapper__left-visible{
+    transform: translateX(0%);
+    
+}
+
+.wrapper__right-visible{
+   transform: none;
+}
+
+
+// Фул меню
+.fulmenu{
+    z-index: 200;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fulmenu-visible{
+    display: flex;
+}
+
+.fulmenu__link{
+    font-size: 63px;
+    font-family: 'sansus';
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    top: 38%;
+    // animation-name: menu;
+    // animation-iteration-count: 1;
+    // animation-timing-function: linear;
+    // animation-duration: 20s;
+    
+}
+
+.fulmenu__link:hover::before{
+    content: url(../images/lblog.png);
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 20px;
+    left: -65px;
+}
+
+.fulmenu__link:hover::after{
+    content: url(../images/rblog.png);
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 20px;
+    right: -65px;
+}
+
+.margin-link0{
+    animation-name: menu0;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: step-end;
+}
+
+.margin-link1{
+    margin-top: 100px;
+    animation-name: menu1;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: step-end;
+}
+
+.margin-link2{
+    margin-top: 200px;
+    animation-name: menu2;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: step-end;
+}
+
+.margin-link3{
+    margin-top: 300px;
+    animation-name: menu3;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: step-end;
+}
+
+@keyframes menu0{
+
+    0% {
+       visibility: hidden;  
+     }
+
+    20%{
+        visibility: visible;
+        font-size: 63px;
+    }
+
+    30%{
+        visibility: visible;
+        font-size: 58px;
+    }
+
+    40%{
+        visibility: visible;
+        font-size: 63px;
+    }
+
+    
+    100% {
+        visibility: visible;
+        font-size: 63px;
+        
+     }
+   }
+
+   @keyframes menu1{
+
+    0% {
+       visibility: hidden;  
+     }
+
+    30%{
+        visibility: visible;
+        font-size: 63px;
+    }
+
+    40%{
+        visibility: visible;
+        font-size: 58px;
+    }
+
+    50%{
+        visibility: visible;
+        font-size: 63px;
+    }
+
+    
+    100% {
+        visibility: visible;
+        font-size: 63px;
+        
+     }
+   }
+
+   @keyframes menu2{
+
+    0% {
+       visibility: hidden;  
+     }
+
+    40%{
+        visibility: visible;
+        font-size: 63px;
+    }
+
+    50%{
+        visibility: visible;
+        font-size: 58px;
+    }
+
+    60%{
+        visibility: visible;
+        font-size: 63px;
+    }
+
+    
+    100% {
+        visibility: visible;
+        font-size: 63px;
+        
+     }
+   }
+
+   @keyframes menu3{
+
+    0% {
+       visibility: hidden;  
+     }
+
+    50%{
+        visibility: visible;
+        font-size: 63px;
+    }
+
+    60%{
+        visibility: visible;
+        font-size: 58px;
+    }
+
+    70%{
+        visibility: visible;
+        font-size: 63px;
+    }
+
+    
+    100% {
+        visibility: visible;
+        font-size: 63px;
+        
+     }
+   }
+
+// Хедер
+
+
+.bgr{
+    background:  bottom left repeat-x;
+    background-image: url(../images/sand.jpg);
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 6112px;
+    animation: bg 100s linear infinite;
+    
+}
+
+@keyframes bg{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-3056px);
+    }
+}
+
+.traingle .color{
+    fill: white;
+    width: 100%;
+    height: 100%;
+}
+
+// Бургер
+.line1,
+.line2,
+.line3{
+    background-color: white;
+    width: 40px;
+    height: 4.8px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.line-hidden{
+    visibility: hidden;
+    transform: skewY(20%);
+}
+
+.line1-transform{
+    transform: rotate(45deg);
+    margin-bottom: -20px;
+    transition: 1s;
+}
+
+.line3-transform{
+    transform: rotate(-45deg);
+    transition: 1s;
+}
+
+// Титул
+.block__title-works{
+    text-align: center;
+    position: relative;
+    height: 190px;
+    background-color: white;
+}
+
+.title-works{
+    font-family: 'sansus';
+    font-size: 63px;
+    text-transform: uppercase;
+    color: #373e42;
+    font-weight: 300;
+    z-index: 2;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 73px;
+}
+
+.title-works:before{
+    content: url(../images/l.svg);
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 20px;
+    left: -65px;
+  }
+  
+  .title-works:after{
+    content: url(../images/r.svg);
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 20px;
+    right: -65px;
+  }
+
+.workssvg{
+    fill: #f7f0e1;
+    width: 486px;
+}
+
+// Слайдер
+
+.block-arrow{
+    position: relative;
+    z-index: 200;
+}
+
+.works-slider{
+    background-color: #ede7dd;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-top: 95px;
+    display: none;
+
+}
+
+.active{
+    display: flex;
+}
+
+// Левая сторона
+
+.works-slider__left{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-left{
+    padding: 40px 46px 0px 33px;
+    position: absolute;
+    top:420px;
+}
+
+.slidprev:hover{
+    background-color: rgba(239, 171, 38, 0.3)
+}
+
+.slidnext:hover{
+    background-color: rgba(239, 171, 38, 0.3)
+}
+
+// Правая сторона
+
+.works-slider__right{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.works-text__title1{
+    font-size: 35px;
+    font-family: 'sansus';
+    font-weight: 300;
+    color: #5d5a55;
+    padding-bottom: 40px;
+}
+
+.works-text__discription{
+    margin-bottom: 40px;
+    border-bottom: black 1px solid;
+    border-top: black 1px solid;
+}
+
+.works-text__discription1{
+    text-transform: uppercase;
+    color: #cd8920;
+    padding: 20px 0px;
+}
+
+
+.works-text__btn{
+    width: 200px;
+    height: 46px;
+    background-color: #efab26;
+    border: none;
+    border-radius: 6px;
+    display:flex;
+    align-items: center;
+}
+
+.works-text__btn:hover{
+    background-color: #cd8920;
+}
+
+.btn{
+    margin-left: 20px;
+}
+
+.workslink{
+    line-height: 46px;
+    width: 100%;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.arrow-right{
+    padding: 40px 33px 0px 40px;
+    position: absolute;
+    right: 0;
+    top: 420px;
+}
+
+
+// What about
+.What-about{
+    background-color: #f0e6d2;
+    position: relative;
+    background-image: url(../images/imgworks.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-bottom: 70px;
+}
+
+.What-about__block-title{
+    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.What-aboutsvg{
+    margin-top: 30px;
+}
+
+// Цитатки преподов
+
+.what-description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.foto-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #cd8920;
+}
+
+.description_name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.description_surname{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.foto-description{
+    margin-top: 24px;
+}
+
+.foto-teacher{
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    margin-right: 20px;
+}
+
+.quotes-svg{
+    margin-bottom: 30px;
+}
+
+.quote{
+    color: #5d5a55;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.what-description__left,
+.what-description__right{
+    margin: 0 20px;
+    line-height: 1.5;
+}
+
+.arrow-up{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+
+.arrow_upsvg{
+    fill: #ccc;
+    width: 28px;
+    height: 18px;
+}
+
+.arrow_upsvg:hover{
+    fill:white;
+}
+
+// Плашка
+.visitcard-works{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgba(223, 201, 166, 0.2);
+    height: auto;
+}
+
+.subtitle-works{
+    margin-top: 0px;
+    padding-top: 37px;
+    color: #5d5a55;
+}
+
+.worksinput-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // font-family: 'Roboto', sans-serif;
+    // font-weight: 400;
+}
+
+.input-first, 
+.input-second{
+    width: 340px;
+    height: 47px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 16px;
+    resize: none;
+}
+
+.input-third{
+    width: 340px;
+    height: 142px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 16px;
+    resize: none;
+}
+
+.input-first::placeholder,
+.input-second::placeholder,
+.input-third::placeholder{
+    color: #5d5a55;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.worksinput-block
+    input::placeholder {color:#5d5a55; text-indent: 20px; margin-bottom: 50px;}
+
+.visitcard-blockbutton__works{
+    margin-top: 0px;
+}
+
+// Футер
+
+.footer-works{
+    background: rgb(82, 82, 76);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;
+    bottom: 0;
+    z-index: 2;
+    color: white;
+    position: inherit;
+}
