@@ -178,7 +178,7 @@
     font-size: 16px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
     .content-button{
         position: absolute;
         left: 50%;
@@ -187,6 +187,35 @@
 
     .visitcard{
         width: 302px;
-        height: 392px;
+        height: 396px;
+    }
+
+    .visitcard__foto-index{
+        margin-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    .visitcard__blocklink{
+        margin-bottom: 21px;
+    }
+
+    .visitcard__blockbutton{
+        margin-top: 61px;
+    }
+
+    .nametext{
+        font-size: 21px;
+    }
+
+    .visitcard__description{
+        font-size: 14px;
+    }
+
+    .text{
+        bottom: 60px;
+    }
+
+    .text-link{
+        width: 64%;
     }
 }

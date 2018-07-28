@@ -1,6 +1,6 @@
 // Хедер
 .header-blog{
-    background-image: url(../images/desert_blog.png);
+    // background-image: url(../images/desert_blog.png);
     background-size: 100% auto;
     height: 60vh;
 }
@@ -69,7 +69,7 @@
 // Санин блог
 
 .blog {
-    
+    position: relative;
 
     &__article {
         padding-bottom: 70px;
@@ -185,7 +185,37 @@
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+    .fulmenu{
+        text-align: center;
+
+        &__link{
+            font-size: 35px;
+            width: 190px;
+            animation: none;
+            top: 20%;
+        }
+    }
+
+    .humburger{
+        top: 5%;
+    }
+
+    .visitcard__foto{
+        // padding-top: 0px;
+    }
+
+    .title-blog{
+        font-size: 30px;
+        margin-top: 44px;
+    }
+
+    .header-description_text{
+        margin-top: 80px;
+        font-size: 14px;
+        text-align: center;
+    }
+
     .blog-content {
         padding: 50px 25px 0;
 
@@ -202,5 +232,9 @@
             display: block;
             z-index: 400;
         }
+    }
+
+    .blog__article-titles{
+        display: none;
     }
 }

@@ -324,6 +324,13 @@
     top: 73px;
 }
 
+.works-page{
+    img{
+        width: 510px;
+        height: 654px;
+    }
+}
+
 .title-works:before{
     content: url(../images/l.svg);
     display: block;
@@ -562,7 +569,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background-color:rgba(223, 201, 166, 0.2);
+    background-color:rgba(223, 201, 166, 0.6);
     height: auto;
 }
 
@@ -631,4 +638,220 @@
     z-index: 2;
     color: white;
     position: inherit;
+}
+
+@media screen and (max-width: 767px) {
+    .iconadaptivsize{
+        width: 21px;
+        height: 18px;
+    }
+
+    .hero{
+        &__links {
+            left: 11px;
+            top: 11px;
+        }
+
+        &__menu{
+            top: 11px;
+        }
+
+        &__visitcard{
+            position: absolute;
+            top: 111px;
+        }
+    }
+
+    .descriptiontext{
+        font-size: 14px;
+    }
+
+    .box{
+        height: 40px;
+    }
+
+    .title-works{
+        font-size: 35px;
+        width: 190px;
+        top: 27px;
+    }
+
+    .block__title-works{
+        height: 95px;
+        }
+    .block-title__svg{
+        height: 95px;
+        width: 290px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 52%;
+    }
+
+    .workssvg{
+        width: 247px;
+    }
+
+    .works-slider{
+        flex-direction: column-reverse;
+        padding-top: 30px;
+
+        &__right{
+            width: 100%;
+            padding-bottom: 67px;
+            margin-bottom: 40px;
+        }
+
+        &__left{
+            width: 100%;
+            padding: 0 37px;
+            img{
+                width: 250px;
+                height: 316px;
+            }
+        }
+
+        
+    }
+
+    .works-text{
+        width: 100%;
+
+        &__title{
+            margin: 0px 65px;
+        }
+
+        &__title1{
+            font-size: 21px;
+            text-align: center;
+        }
+
+        &__discription{
+            width: 98%;
+            text-align: center;
+            margin-left: 1%;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        &__btn{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 223px;
+            left: 50%;
+            margin-bottom: 50px;
+        }
+    }
+
+    .arrow-right{
+        right: 8px;
+        padding: 0px;
+    }
+
+    .arrow-left{
+        left: 8px;
+        padding: 0px;
+    }
+
+    .top0{
+        transform: translate(-50%, -73%);
+        top: 50%;
+        left: 52%;
+    }
+
+    .What-about__block-title{
+        margin-bottom: -10px;
+    }
+
+    .what-description{
+        flex-direction: column;
+        font-size: 14px;
+
+        &__right{
+            margin-top: 40px;
+        }
+    }
+
+    .quotes-svg{
+        text-align: center;
+    }
+
+    .visitcard-works{
+        width: 302px;
+        height: 436px;
+    }
+
+    .subtitle-works{
+        font-size: 21px;
+    }
+
+    .block-subtitle::after{
+        top: 41.5px;
+    }
+
+    .block-subtitle::before{
+        top: 41.5px;
+    }
+
+    .input-first,
+    .input-second,
+    .input-third{
+        width: 264px;
+    }
+
+    .footer-works{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 17px;
+        font-size: 14px;
+    }
+
+    .footer-left{
+        width: 96%;
+        text-align: center;
+    }
+
+    .footer-center{
+        width: 96%;
+        border: none;
+
+        &__top{
+            margin-left: 0px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &__bottom{
+            margin-left: 0px;
+        }
+    }
+
+    .footer-center::before{
+        content: '';
+        border-top: 1px solid #a9a9a6;
+        margin-bottom: 20px;
+    }
+
+    .footer-center::after{
+        content: '';
+        border-bottom: 1px solid #a9a9a6;
+        margin: 20px 0px;
+    }
+    
+    .footer-menu__link{
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
+    .footer-icon{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-right{
+        width: 96%;
+        font-size: 14px;
+        margin-left: 0px;
+        text-align: center;
+
+    }
 }
